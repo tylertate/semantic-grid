@@ -1,0 +1,87 @@
+body {
+  padding: 0 1.0416666666666665%;
+  margin: 0;
+}
+#container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+header {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  width: 102.08333333333333%;
+  margin: 0 -1.0416666666666665%;
+  background-color: black;
+}
+header h1 {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 97.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  padding: 1em 0;
+  color: white;
+}
+article {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  width: 102.08333333333333%;
+  margin: 0 -1.0416666666666665%;
+  margin-top: 10px;
+}
+article section {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 64.58333333333334%;
+  margin: 0 1.0416666666666665%;
+}
+article section ul.boxes {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  width: 103.125%;
+  margin: 0 -1.5625%;
+  padding: 0;
+}
+article section ul.boxes li {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 21.875%;
+  margin: 0 1.5625%;
+  list-style: none outside none;
+  text-align: center;
+  padding: 1em 0;
+  background-color: #e9e9e9;
+}
+article aside {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.0416666666666665%;
+  background-color: #e9e9e9;
+}
+footer {
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  width: 102.08333333333333%;
+  margin: 0 -1.0416666666666665%;
+  margin-top: 20px;
+}
+footer div {
+  display: block;
+  overflow: hidden;
+  float: left;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+  background-color: #e9e9e9;
+}

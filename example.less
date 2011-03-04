@@ -1,0 +1,56 @@
+// GRID //
+@column-width: 60;
+@gutter-width: 20;
+@columns: 12;
+@import 'grid.less';
+
+#container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+header {
+	.row;
+	background-color: black;
+	
+	h1 {
+		.grid(12);
+		padding: 1em 0;
+		color: white;
+	}
+}
+article {
+	.row;
+	margin-top: 10px;
+	
+	section {
+		.grid(8);
+		
+		ul.boxes {
+			.row(8);
+			padding: 0;
+
+			li {
+				.grid(2,8);
+				list-style: none outside none;
+				
+				text-align: center;
+				padding: 1em 0;
+				background-color: #e9e9e9;
+			}
+
+		}
+	}
+	aside {
+		.grid(4);
+		background-color: #e9e9e9;
+	}
+}
+footer {
+	.row;
+	margin-top: 20px;
+	
+	div {
+		.grid(3);
+		background-color: #e9e9e9;
+	}
+}

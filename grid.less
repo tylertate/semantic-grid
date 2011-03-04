@@ -1,0 +1,29 @@
+body {
+	@total-width: (@column-width*12) + (@gutter-width*12);
+	
+	padding: 0 ((@gutter-width*.5)/@total-width)*100%;
+	margin: 0;
+}
+
+.row(@columns:@columns) {
+	@total-width: (@column-width*@columns) + (@gutter-width*@columns);
+
+	display: block;
+	overflow: hidden;
+	margin: 0 auto;
+	width: 100%;
+	
+	width: ((@gutter-width + @total-width)/@total-width)*100%;
+	margin: 0 ((@gutter-width*.5)/@total-width)*-100%;
+}
+
+.grid(@x,@columns:@columns) {
+	@total-width: (@column-width*@columns) + (@gutter-width*@columns);
+
+	display: block;
+	overflow: hidden;
+	float: left;
+
+	width: ((((@gutter-width+@column-width)*@x)-@gutter-width) / @total-width) * 100%;
+	margin: 0 ((@gutter-width*.5)/@total-width)*100%;
+}

@@ -10,8 +10,6 @@ body {
 
 	display: block;
 	overflow: hidden;
-	margin: 0 auto;
-	width: 100%;
 	
 	width: ((@gutter-width + @total-width)/@total-width)*100%;
 	margin: 0 ((@gutter-width*.5)/@total-width)*-100%;
@@ -23,7 +21,7 @@ body {
 	display: block;
 	overflow: hidden;
 	float: left;
-	zoom: 1;
+	display: inline;
 
 	width: ((((@gutter-width+@column-width)*@x)-@gutter-width) / @total-width) * 100%;
 	margin: 0 ((@gutter-width*.5)/@total-width)*100%;

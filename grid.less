@@ -1,3 +1,7 @@
+@column-width: 60;
+@gutter-width: 20;
+@columns: 12;
+
 body {
 	@total-width: (@column-width*12) + (@gutter-width*12);
 	
@@ -7,22 +11,18 @@ body {
 
 .row(@columns:@columns) {
 	@total-width: (@column-width*@columns) + (@gutter-width*@columns);
-
-	display: block;
-	overflow: hidden;
 	
+	overflow: hidden;
 	width: ((@gutter-width + @total-width)/@total-width)*100%;
 	margin: 0 ((@gutter-width*.5)/@total-width)*-100%;
 }
 
 .grid(@x,@columns:@columns) {
 	@total-width: (@column-width*@columns) + (@gutter-width*@columns);
-
-	display: block;
+	
 	overflow: hidden;
 	float: left;
-	_display: inline;
-
 	width: ((((@gutter-width+@column-width)*@x)-@gutter-width) / @total-width) * 100%;
 	margin: 0 ((@gutter-width*.5)/@total-width)*100%;
+	_display: inline;
 }
